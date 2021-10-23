@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title> </title>
+</head>
+<body>
+    <div class="container">
+    <div class="weather-side">
+        <div class="weather-gradient">
+            <div class="date-container">
+                <h1 class="day"> Tuesday </h1>
+               <span id="date"> 15 Jan 2019 </span>
+               <i class="location-icon" data-feather="map-pin"> </i>
+               <span id="location"> Paris, FR </span>
+            </div>
+            <div class="weather-container">
+                <i class="weather-icon" data-feather="sun" id="icon"></i>
+                <h1 id="tempreture"> 29°C </h1>
+                <h3 id="weather"> Sunny</h3>
+            </div>
+        </div>
+    </div>
+    <div class="info-side">
+        <div class="today-info-container">
+            <div class="today-info">
+                <div class="precipitation">
+                    <span id="one"> PRECIPITATION </span>
+                    <span class="value"> 0 % </span>
+                    <div class="clear"></div>
+                </div>
+                <div class="humidity">
+                    <span> HUMIDITY </span>
+                    <span class="value" id="humidity"> 34 % </span>
+                    <div class="clear"></div>
+                </div>
+                <div class="wind">
+                    <span> WIND </span>
+                    <span class="value" id="wind"> 0 km/h </span>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+        <div class="week-container">
+            <ul class="week-list">
+                <li class="active">
+                    <i class="day-icon" data-feather="sun"></i>
+                    <span class="day-name")> Tue </span>
+                    <span class="day-temp"> 29°C </span>
+                </li>
+                <li class="humidity">
+                    <i class="day-icon" data-feather="cloud"></i>
+                    <span class="day-name")> Wed </span>
+                    <span class="day-temp"> 21°C </span>
+                </li>
+                <li class="wind">
+                    <i class="day-icon" data-feather="cloud-snow"></i>
+                    <span class="day-name")> Thu </span>
+                    <span class="day-temp"> 08°C </span>
+                </li>
+                <li class="wind">
+                    <i class="day-icon" data-feather="cloud-snow"></i>
+                    <span class="day-name")> Fry </span>
+                    <span class="day-temp"> 19°C </span>
+                </li>
+                <div class="clear"></div>
+            </ul>
+        </div>
+        <div class="location-container">
+            <button class="location-button">Change Location</button>
+            <select name="cities" id="cities">
+                <option value="Amman">Amman</option>
+                <option value="Paris">Paris</option>
+                <option value="California">California</option>
+                <option value="Cairo">Cairo</option>
+            </select>
+        </div>
+        </div>
+    </div>
+    </div>
+    <script type='text/javascript' src="js/main.js">
+    //<![CDATA[
+    function loadCSS(e, t, n) { "use strict"; var i = window.document.createElement("link"); var o = t || window.document.getElementsByTagName("script")[0]; i.rel = "stylesheet"; i.href = e; i.media = "only x"; o.parentNode.insertBefore(i, o); setTimeout(function () { i.media = n || "all" }) }
+    loadCSS("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css");
+    //]]>
+    </script>
+    <noscript>
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css' rel='stylesheet'/>
+    </noscript>
+</body>
+</html>
